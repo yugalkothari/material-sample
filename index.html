@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- load MUI -->
+      <link href="http://cdn.muicss.com/mui-0.9.16/css/mui.min.css" rel="stylesheet" type="text/css" />
+      <script src="http://cdn.muicss.com/mui-0.9.16/js/mui.min.js"></script>
+	  <link rel="stylesheet" href="build/css/countrySelect.min.css">
+	  <link rel="stylesheet" href="build/css/demo.css">
+   </head>
+   <body>
+      <!-- example content -->
+      <div id="background">
+      <div class="mui-container">
+         <div class="mui-panel">
+            <div class="mui-container-fluid">
+               <form class="mui-form">
+                  <div class="mui-row">
+                     <div class="mui-col-md-3">
+                        <div class="mui-select">
+                           <select>
+                              <option>Mr.</option>
+                              <option>Mrs.</option>
+                              <option>Ms.</option>
+                           </select>
+                           <label>Title</label>
+                        </div>
+                     </div>
+                     <div class="mui-col-md-3">
+                        <div class="mui-textfield mui-textfield--float-label">
+                           <input type="text" required>
+                           <label>First Name</label>
+                        </div>
+                     </div>
+                     <div class="mui-col-md-3">
+                        <div class="mui-textfield mui-textfield--float-label">
+                           <input type="text" required>
+                           <label>Last Name</label>
+                        </div>
+                     </div>
+                     <div class="mui-col-md-3">
+                        <div class="mui-select">
+                           <select>
+                              <option>V</option>
+                              <option>NV</option>
+                           </select>
+                           <label>Suffix</label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="mui-row">
+                     <div class="mui-col-md-3">
+                        <div class="mui-select">
+                           <select>
+                              <option>Male</option>
+                              <option>Female</option>
+                           </select>
+                           <label>Gender</label>
+                        </div>
+                     </div>
+                     <div class="mui-col-md-1">
+                        <div class="mui-select">
+                           <select>
+                              <option>Jan</option>
+                              <option>Feb</option>
+                              <option>Mar</option>
+                              <option>Apr</option>
+                              <option>May</option>
+                              <option>Jun</option>
+                              <option>Jul</option>
+                              <option>Aug</option>
+                              <option>Sep</option>
+                              <option>Oct</option>
+                              <option>Nov</option>
+                              <option>Dec</option>
+                           </select>
+                           <label>Month</label>
+                        </div>
+                     </div>
+                     <div class="mui-col-md-1">
+                        <div class="mui-textfield mui-textfield--float-label">
+                           <input type="text" required>
+                           <label>Day</label>
+                        </div>
+                     </div>
+                     <div class="mui-col-md-1">
+                        <div class="mui-textfield mui-textfield--float-label">
+                           <input type="text" required>
+                           <label>Year</label>
+                        </div>
+                     </div>
+                     <div class="mui-col-md-3">
+                        <div class="mui-textfield mui-textfield--float-label">
+                           <input type="text" required>
+                           <label>Home Address</label>
+                        </div>
+                     </div>
+                     <div class="mui-col-md-3">
+                        <div class="mui-textfield mui-textfield--float-label">
+                           <input type="text" required>
+                           <label>Work Address</label>
+                        </div>
+                     </div>
+                  </div>
+                  
+                  <div class="mui-row">
+                     <div class="mui-col-md-9">
+                        <div class="mui-textfield mui-textfield--float-label">
+                           <input type="email" required>
+                           <label>Alternative Email Id</label>
+                        </div>
+                     </div>
+                     <div class="mui-col-md-3">
+                        <div class="mui-textfield mui-textfield--float-label">
+                           <input type="text" id="country_selector">
+                        </div>
+                     </div>
+                     </div>
+                     
+                  </div>
+            </div>
+            </form>
+         </div>
+      </div>
+      </div>
+      <div class="mui-divider"></div>
+	  		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="build/js/countrySelect.min.js"></script>
+		<script>
+			$("#country_selector").countrySelect({
+				//defaultCountry: "jp",
+				onlyCountries: ['us', 'gb', 'ch', 'ca', 'do']
+				//preferredCountries: ['ca', 'gb', 'us']
+			});
+		</script>
+
+   </body>
+</html>
+
+
+   
+
+    
+    
+
+           
+			
